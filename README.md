@@ -1,6 +1,8 @@
 # nginxplus-ubuntu-20.04-userdata-aws
 User data script to install nginx plus in Ubuntu 20.04 on AWS
+
 Copy and paste the text below in your user-data field when launching new ubuntu-20.04 instance on AWS
+
 Remember to fill your own nginx-repo.crt/key in the placeholders below.
 
 ```

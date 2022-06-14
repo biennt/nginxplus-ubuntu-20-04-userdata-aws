@@ -8,6 +8,7 @@ Remember to fill your own nginx-repo.crt/key in the placeholders below.
 ```
 #!/bin/bash
 # use this in user-data (aws)
+sed -i 's/PasswordAuthentication\sno/PasswordAuthentication\syes/g' /etc/ssh/sshd_config
 apt-get update
 apt-get upgrade -y
 mkdir /etc/ssl/nginx
